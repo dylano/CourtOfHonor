@@ -1,0 +1,27 @@
+.cardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 6px solid black;
+  border-radius: 1rem;
+  max-width: 3in;
+  width: 100%;
+
+  h4 {
+    margin: 0;
+
+    & + div {
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+.category {
+  display: block;
+  font-weight: bold;
+  padding-inline-end: 0.25rem;
+}
