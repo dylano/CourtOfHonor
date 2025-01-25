@@ -1,4 +1,4 @@
-import styles from "./AwardList.module.css";
+import styles from './AwardList.module.css';
 
 export function AwardList() {
   type AwardData = {
@@ -9,8 +9,8 @@ export function AwardList() {
 
   const awards: AwardData[] = [
     {
-      name: "Sample Scout",
-      badges: ["Canoeing", "Fingerprinting", "Wilderness Survival"],
+      name: 'Sample Scout',
+      badges: ['Canoeing', 'Fingerprinting', 'Wilderness Survival'],
       other: ["Firem'n Chit", "Totin' Chip"],
     },
   ];
@@ -23,14 +23,14 @@ export function AwardList() {
           <p>
             <h4 className={styles.category}>
               Merit badges
-              {award.badges.length > 2 ? ` (${award.badges.length})` : ""}
+              {award.badges.length > 2 ? ` (${award.badges.length})` : ''}
             </h4>
-            <div>{award.badges.join(", ")}</div>
+            <div>{award.badges.join(', ')}</div>
           </p>
           {award.other && award.other.length > 0 && (
             <p>
               <h4 className={styles.category}>Additional awards</h4>
-              <div>{award.other.join(", ")}</div>
+              <div>{award.other.join(', ')}</div>
             </p>
           )}
         </div>
